@@ -17,6 +17,8 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OrderColumn;
 import jakarta.persistence.Table;
+import jakarta.persistence.CollectionTable;
+import jakarta.persistence.JoinColumn;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 
@@ -55,7 +57,9 @@ public class Spot extends AuditableEntity {
     private User owner;
 
     @ElementCollection
+    @CollectionTable(name = "spot_images", joinColumns = @JoinColumn(name = "spot_id"))
     @OrderColumn(name = "image_order")
+    @Column(name = "image_url")
     private List<String> imageUrls = new ArrayList<>();
 
     protected Spot() {
