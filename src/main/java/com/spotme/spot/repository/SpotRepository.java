@@ -1,4 +1,4 @@
-package com.spotme.spot.domain.repository;
+package com.spotme.spot.repository;
 
 import com.spotme.spot.domain.Spot;
 import org.springframework.data.jpa.repository.JpaRepository;
