@@ -7,6 +7,9 @@ import java.util.Optional;
 
 public interface UserRepository extends JpaRepository<User, Long> {
 
-    // Optional avoids NullPointerException
+    /**
+     * Looks up a user by email — used primarily during authentication
+     * (see Beta 3: registration and login).
+     */
     Optional<User> findByEmail(String email);
 }

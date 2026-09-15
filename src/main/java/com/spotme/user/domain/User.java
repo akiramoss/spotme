@@ -8,6 +8,12 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+/**
+ * A registered SpotMe user.
+ * <p>
+ * {@code passwordHash} always stores a hashed value — never plain text
+ * (hashing strategy defined in Beta 3, authentication).
+ */
 @Entity
 @Table(name = "users")
 public class User extends AuditableEntity {
