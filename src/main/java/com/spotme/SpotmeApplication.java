@@ -4,6 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
+/**
+ * Application entry point.
+ * <p>
+ * {@code @EnableJpaAuditing} activates the {@code createdAt}/{@code updatedAt}
+ * auto-population defined in {@link com.spotme.common.AuditableEntity}.
+ */
 @SpringBootApplication
 @EnableJpaAuditing
 public class SpotmeApplication {
