@@ -1,4 +1,4 @@
-package com.spotme.user;
+package com.spotme.user.domain;
 
 import com.spotme.common.AuditableEntity;
 import jakarta.persistence.Column;

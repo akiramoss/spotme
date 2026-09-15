@@ -1,9 +1,7 @@
-package com.spotme.spot;
+package com.spotme.spot.domain;
 
 import com.spotme.common.AuditableEntity;
-import com.spotme.spot.domain.Category;
-import com.spotme.spot.domain.Visibility;
-import com.spotme.user.User;
+import com.spotme.user.domain.User;
 import jakarta.persistence.Column;
 import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
@@ -18,9 +16,6 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OrderColumn;
 import jakarta.persistence.Table;
 import jakarta.persistence.CollectionTable;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 
 import java.util.ArrayList;
 import java.util.List;
