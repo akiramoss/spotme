@@ -11,7 +11,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
  * auto-population defined in {@link com.spotme.common.AuditableEntity}.
  */
 @SpringBootApplication
-@EnableJpaAuditing
 public class SpotmeApplication {
     public static void main(String[] args) {
         SpringApplication.run(SpotmeApplication.class, args);
