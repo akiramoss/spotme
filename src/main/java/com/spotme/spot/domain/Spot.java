@@ -131,7 +131,9 @@ public class Spot extends AuditableEntity {
         return visibility;
     }
 
-    /** Returns an unmodifiable view of the spot's images, in display order. */
+    /**
+     * Returns an unmodifiable view of the spot's images, in display order.
+     */
     public List<String> getImageUrls() {
         return List.copyOf(imageUrls);
     }
