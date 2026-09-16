@@ -45,7 +45,7 @@ class SpotRepositoryTest {
         );
         spotRepository.save(spot);
 
-        Optional<Spot> found = spotRepository.findBySpotId(spot.getId());
+        Optional<Spot> found = spotRepository.findById(spot.getId());
 
         assertThat(found).isPresent();
         assertThat(found.get().getTitle()).isEqualTo("Cozy cafe");
