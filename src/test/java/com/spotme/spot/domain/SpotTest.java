@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 class SpotTest {
 
-    private final User owner = new User("owner@spotme.com", "hashed_password");
+    private final User owner = new User("owner@spotme.com", "testuser", "hashed_password");
 
     @Test
     void rejectsMoreThanMaxImages() {

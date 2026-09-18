@@ -31,7 +31,7 @@ class UserRepositoryTest {
 
     @Test
     void savesAndFindsUserByEmail() {
-        User user = new User("test@spotme.com", "hashed_password");
+        User user = new User("test@spotme.com", "testuser", "hashed_password");
         userRepository.save(user);
 
         Optional<User> found = userRepository.findByEmail("test@spotme.com");

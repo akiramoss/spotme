@@ -38,7 +38,7 @@ class SpotRepositoryTest {
 
     @Test
     void savesAndFindsSpotWithOwner() {
-        User owner = userRepository.save(new User("owner@spotme.com", "hashed_password"));
+        User owner = userRepository.save(new User("owner@spotme.com", "testuser", "hashed_password"));
 
         Spot spot = new Spot(
                 "Cozy cafe", "Great coffee and wifi",
