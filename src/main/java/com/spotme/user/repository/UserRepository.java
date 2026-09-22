@@ -9,7 +9,15 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     /**
      * Looks up a user by email — used primarily during authentication
-     * (see Beta 3: registration and login).
+     * @param email
+     * @return
      */
     Optional<User> findByEmail(String email);
+
+    /**
+     * Looks up a user by username — used primarily during authentication
+     * @param username
+     * @return
+     */
+    Optional<User> findByUsername(String username);
 }
